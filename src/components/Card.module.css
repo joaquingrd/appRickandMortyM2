@@ -1,0 +1,54 @@
+.divCard{
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+    background-color: #c47878e0;
+    border: 3px solid rgb(104, 5, 5);
+    position: relative;
+    box-shadow: 0px 0px 20px 5px rgba(230, 10, 10, 0.74);
+
+}
+
+
+
+.name{
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 220px;
+    position: absolute;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.characters{
+    width: 300px;
+    height: 35px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content:space-around;
+    position: absolute;
+    background-color: rgba(104, 5, 5, 0.747);
+    margin-top: 265px;
+    color: rgb(231, 199, 199);
+    
+}
+
+.button {
+    background-color: #d30b0b; /* Green */
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 2.5px;
+    margin-top: 2px;
+    display: flex;
+    margin-left: 273px;
+    justify-content: end;
+    align-items: flex-end;
+    position: absolute;
+}
