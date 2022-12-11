@@ -29,8 +29,6 @@ const Form = (props)=>{
             image: "https://rickandmortyapi.com/api/character/avatar/19.jpeg"
         });
         alert("Personaje creado");
-     
-
     }
 
     return(
