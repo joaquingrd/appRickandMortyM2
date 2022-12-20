@@ -1,57 +1,35 @@
-import React from "react";
-import styles from "./SearchBar.module.css"
+// import styles from './SearchBar.module.css';
+// import { useState } from 'react';
 
+// const SearchBar = (props) => {
 
+//    const [id, setId] = useState('')
 
+//    const handleChange = (event) => {
+//       setId(event.target.value)
+//    }
 
-export default function SearchBar (props){
-
-   return (
-
-      <div>
-         <form >
-            <input 
-            className={styles.Search} 
-            type='search' 
-            name="search"
-            placeholder="Encuentra tu personaje"
-           />
-
-            <button className={styles.button} >Agregar</button>
-         </form>
+//    const handleSubmit = (event) => {
+//          event.preventDefault()
          
-      </div>
-   );
-}
+//       }
 
+     
+//    return (
+//       <div>
+//          <form onSubmit={handleSubmit}>
+//             <input 
+//                className={styles.InputSearch} 
+//                type='search' 
+//                id=''   
+//                onChange={handleChange}/>
+//             <button 
+//             type="submit"
+//             className={styles.ButtonSearch} 
+//             onClick={() => props.onSearch(id)}>Buscar Personaje</button>
+//          </form>
+//       </div>
+//    );
+// }
 
-
-// // const [personaje, setPersonaje] = useState ([])
-// // const [searchId, setSearchId] = useState('');
-
-// // const datos = event => {
-// //    event.preventDefault()
-// //    fetch(`https://rickandmortyapi.com/api/character/${searchId}`)
-// //    .then(response => response.json())
-// //    .then(data => {
-// //       setPersonaje(data)
-// //    })
-// // }   
-
-// // useEffect(()=> {
-// // datos();
-// // },[])
-
-
-
- 
-// // }
-// // const handleSubmit = (event) => {
-// //    event.preventDefault()
-// //    const filtrar = (terminoBusqueda)=>{
-// //       let resultadosBusqueda=personaje.filter((elemento)=>(
-// //          if(elemento.id.include(terminodeBusqueda))
-// //       ))
-// //    }
-// // }
-
+// export default SearchBar;

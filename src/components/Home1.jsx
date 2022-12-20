@@ -1,15 +1,15 @@
-import Cards from "./Cards.jsx";
-const Home = ()=>{
-    return(
-        <>
+// import Cards from "./Cards.jsx";
+// const Home = ()=>{
+//     return(
+//         <>
 
-            <Cards />
+//             <Cards />
 
-        </>
-    )
-}
+//         </>
+//     )
+// }
 
-export default Home;
+// export default Home;
 
 
 

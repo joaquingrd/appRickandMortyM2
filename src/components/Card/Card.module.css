@@ -1,0 +1,83 @@
+.divCard{
+    width: 230px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+    border: solid white 7px;
+    position: relative;
+    box-shadow: 0px 0px 10px 5px rgb(10, 10, 10);
+    border-radius: 0px 0px 0px 0px;
+
+}
+
+.img{
+    border-radius: 6px 6px 0px 0px;
+}
+
+.boton{
+    font-family: 'Oswald', sans-serif;
+    font-weight:600;
+    color:#7b04a0;
+    font-size:15px;
+    letter-spacing:3px;
+    position:relative;
+    display:inline-block;
+    transition: 0.3s;
+    border: none;
+    height: 40px;
+}
+
+.boton:hover{
+    color: #111111ad;
+    text-shadow: 0px 0px 10px #a945c7, 0 0 10px #a945c7, 0 0 10px #a945c7;
+    
+ 
+ 
+}
+
+
+
+/* .characters{
+    width: 300px;
+    height: 35px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content:space-around;
+    position: absolute;
+    background-color: rgba(104, 5, 5, 0.747);
+    margin-top: 265px;
+    color: rgb(231, 199, 199);
+    
+} */
+/* 
+.button {
+    background-color: #d30b0b; 
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 2.5px;
+    margin-top: 2px;
+    display: flex;
+    margin-left: 273px;
+    justify-content: end;
+    align-items: flex-end;
+    position: absolute;
+} */
+
+/* .name{
+    background-color: aqua;
+    width: 200px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    border-radius: 3px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+
+} */

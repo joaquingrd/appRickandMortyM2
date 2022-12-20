@@ -1,7 +1,5 @@
 .App {
-   text-align: center;
-   background-image: url(./imagenes/fondo3.jpg);
-   overflow: hidden;
-   margin-top: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 

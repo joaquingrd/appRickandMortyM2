@@ -1,24 +1,20 @@
 import './App.css'
 import NavBar from './components/NavBar.jsx'
 import {Route, Routes} from "react-router-dom";
-import Home from "./components/Home.jsx"
+import Home from "./components/Home/Home"
 import Form from "./components/Form.jsx"
-import SearchBar from './components/SearchBar';
 import SearchHome from './components/SearchHome'
+import LandingPage from './components/LandingPage/LandingPage';
 
-// import {useState} from "react"
-
-function App () {
-
-
+function App (props) {
+  
 
   return (
-    <div className='App' style={{ padding: '25px' }}>
-      <NavBar />
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/form' element={<Form />} />
-        <Route exact path='/search' element={<><SearchBar/> <SearchHome/> </>} />
+    <div className='App'>
+         <Routes>
+        <Route exact path='/' element={<LandingPage />} />
+        <Route exact path='/Home' element={<Home />} />
+        <Route exact path='/search' element={<SearchHome onSearch={props.onSearch}/> } />
          </Routes>
      
     </div>
@@ -29,7 +25,19 @@ export default App
 
 
 
+  // const [characters, setCharacters] = useState(character)
 
+  // const onSearch = (characterId) => {
+  //   fetch(`"https://rickandmortyapi.com/api/${characterId}"`)
+  //   .then(results => results.json())
+  //   .then(data =>{
+  //     if(data.name){
+  //       setCharacters(prevState => [...prevState, data])
+  //     } else {
+  //       window.alert("No se encontró tu personaje!!!")
+  //     }
+  //   })
+  // }
  
 
 

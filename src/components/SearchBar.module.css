@@ -1,4 +1,4 @@
-/* .Search{
+/* .InputSearch{
     border-radius: 10px;
     height: 30px;
     width: 300px;
@@ -6,9 +6,10 @@
     font-size: 20px;
     margin-right: 50px;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
-.button{
+.ButtonSearch{
     border-radius: 10px;
     min-width: auto;
     justify-content: center;
