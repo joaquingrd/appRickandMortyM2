@@ -5,6 +5,8 @@ import Home from "./components/Home/Home"
 import Form from "./components/Form.jsx"
 import SearchHome from './components/SearchHome'
 import LandingPage from './components/LandingPage/LandingPage';
+import Details from './components/Details/Details';
+
 
 function App (props) {
   
@@ -13,8 +15,9 @@ function App (props) {
     <div className='App'>
          <Routes>
         <Route exact path='/' element={<LandingPage />} />
-        <Route exact path='/Home' element={<Home />} />
-        <Route exact path='/search' element={<SearchHome onSearch={props.onSearch}/> } />
+        <Route exact path='/home' element={<Home />} />
+        <Route exact path='/details/:id' element={<Details />} />
+        {/* <Route exact path='/search' element={<SearchHome onSearch={props.onSearch}/> } /> */}
          </Routes>
      
     </div>

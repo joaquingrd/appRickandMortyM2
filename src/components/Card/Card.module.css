@@ -16,24 +16,29 @@
 }
 
 .boton{
-    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    font-family: monospace;
     font-weight:600;
-    color:#7b04a0;
+    color:black;
     font-size:15px;
-    letter-spacing:3px;
+    letter-spacing:1px;
     position:relative;
     display:inline-block;
     transition: 0.3s;
     border: none;
     height: 40px;
+    text-transform: uppercase;
 }
 
 .boton:hover{
     color: #111111ad;
-    text-shadow: 0px 0px 10px #a945c7, 0 0 10px #a945c7, 0 0 10px #a945c7;
-    
- 
- 
+
+    font-size: 16px;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
 }
 
 

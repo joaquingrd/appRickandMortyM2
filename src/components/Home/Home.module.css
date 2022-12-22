@@ -1,5 +1,7 @@
 .body {
-background: linear-gradient(rgba(13, 88, 2, 0.753),rgb(80, 2, 73));
-padding-top: 20px;
+    background-image: url(../../imagenes/fondo4.jpg); 
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding-top: 20px;
 }
 

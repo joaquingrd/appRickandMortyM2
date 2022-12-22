@@ -21,11 +21,11 @@ nav{
    
   }
   nav a{
-    font-family: 'Oswald', sans-serif;
+    font-family: monospace;
     font-weight:500;
     text-transform:uppercase;
     text-decoration:none;
-    color:#a945c7;
+    color:#f8f5f5;
     font-size:28px;
     letter-spacing:5px;
     position:relative;
@@ -46,8 +46,10 @@ nav{
   } */
   nav a:hover{
    /* background-color: #24920b; */
-   color: #35df0a;
-   text-shadow: 0 0 20px #a945c7, 0 0 20px #a945c7, 0 0 20px #a945c7;
+   color: #f3f3f1;
+   /* text-shadow: 0 0 20px #e5e746, 0 0 20px #e5e746, 0 0 20px #f5f8f4e3; */
    font-size: 29px;
-   padding-left: 54px;
-}
+   text-decoration:  underline  solid #fcfcfb ;
+   padding-left: 47px;
+ }
+

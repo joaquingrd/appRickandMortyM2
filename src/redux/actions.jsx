@@ -1,7 +1,9 @@
+import axios from 'axios';
+
+
 export const GET_CHARACTERS = "GET_CHARACTERS";
 export const DELETE_CHARACTER = "DELETE_CHARACTER";
 export const CREATE_CHARACTER = "CREATE_CHARACTER";
-
 
 export const getCharacters = () => {
   return function (dispatch) {
@@ -36,3 +38,16 @@ export const getCharacters = () => {
         );
     };
   };
+
+  export function getDetails(id) {
+    return async function (dispatch) {
+        try {
+            var response = await axios.get(`https://rickandmortyapi.com/api/character/${id}`)
+            console.log(response.data)
+            return dispatch({type: 'GET_DETAILS', payload: response.data})
+        } catch (error) {
+            console.log(error)
+        }
+    }
+  }
+

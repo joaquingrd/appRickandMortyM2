@@ -6,7 +6,6 @@ function NavBar() {
       <div className={styles.nav}>
        <nav>
         <a href="#">INICIO</a>
-        <a href="#">BUSCAR</a>
         <a href="#">FAVORITOS</a>
         <a href="#">CREAR</a>
        </nav>

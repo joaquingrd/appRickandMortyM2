@@ -4,6 +4,7 @@ const initialState = {
     characters:[],
     myCharacters: [],
     detail: {},
+    details:[]    
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -26,6 +27,12 @@ const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 myCharacters: [...state.myCharacters, action.payload]
+            }
+
+        case 'GET_DETAILS':
+            return{
+                ...state,
+                details: action.payload
             }
 
         default:
