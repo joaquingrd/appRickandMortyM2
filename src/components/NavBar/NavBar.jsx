@@ -1,13 +1,15 @@
 import styles from "./NavBar.module.css";
+import SearchBar from "../SearchBar/SearchBar";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return(
     <div className={styles.body}>
       <div className={styles.nav}>
        <nav>
-        <a href="#">INICIO</a>
-        <a href="#">FAVORITOS</a>
-        <a href="#">CREAR</a>
+        <Link to={'/home'} > INICIO </Link>
+        <Link to={'/form'} > CREAR </Link>
+        <SearchBar />
        </nav>
 
       </div>

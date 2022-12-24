@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux"
 import { deleteCharacter } from "../../redux/actions"
 import { Link } from "react-router-dom";
 
-const Card = ({ name, species, gender, image, id}) => {
+const Card = ({ name, image, id}) => {
 
    const dispatch=useDispatch();
 

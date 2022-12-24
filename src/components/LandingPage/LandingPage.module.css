@@ -2,7 +2,7 @@
     background-image: url(../../imagenes/home.jpg);     
     background-size:cover;
     background-repeat:no-repeat;
-    min-height: 100.1vh;
+    min-height: 100vh;
     display: flex;
     justify-content:flex-start;
     align-items:flex-end;

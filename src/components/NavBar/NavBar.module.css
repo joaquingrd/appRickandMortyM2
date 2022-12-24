@@ -16,7 +16,7 @@ nav{
     margin-bottom: 50px;
     margin-left: 2%;
     margin-right: 2%;
-    gap: 20px;
+    gap: 15px;
     border-radius: 10px;
    
   }
@@ -25,13 +25,13 @@ nav{
     font-weight:500;
     text-transform:uppercase;
     text-decoration:none;
-    color:#f8f5f5;
+    color:#c0bdbd;
     font-size:28px;
     letter-spacing:5px;
     position:relative;
     display:inline-block;
     transition: 0.3s;
-    padding-left: 50px;
+    padding-left: 85px;
        /* background-color: #a945c794; */
   
   }
@@ -46,10 +46,11 @@ nav{
   } */
   nav a:hover{
    /* background-color: #24920b; */
-   color: #f3f3f1;
-   /* text-shadow: 0 0 20px #e5e746, 0 0 20px #e5e746, 0 0 20px #f5f8f4e3; */
-   font-size: 29px;
-   text-decoration:  underline  solid #fcfcfb ;
-   padding-left: 47px;
+   color: #dddd1c;
+   /* text-shadow: 0 0 5px #4d4d4b, 0 0 5px #5a5a59, 0 0 5px #ecd713e3; */
+   font-size: 28px;
+   text-decoration:  underline  solid #8e918ba1 ;
+   /* padding-left: 35px;
+    */
  }
 
