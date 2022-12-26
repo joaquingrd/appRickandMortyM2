@@ -57,7 +57,7 @@ const Form = (props) => {
                     <option>VIVO</option>
                     <option>MUERTO</option>
                 </select> 
-                <input className={styles.input} placeholder="GENERO" name="gender" value={form.gender} onChange={(event) => handleChange(event)} />    
+               
             </form>
             <button className={styles.boton} onClick={handleSubmit} type="submit">CREAR</button>
 
@@ -67,6 +67,8 @@ const Form = (props) => {
                 <Card
                   name={character.name}
                   image={character.image}
+                  specie={character.specie}
+                  status={character.status}
                 />
             )
           })

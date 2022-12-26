@@ -11,6 +11,7 @@ function NavBar() {
         <Link to={'/form'} > CREAR </Link>
         <SearchBar />
        </nav>
+       <Link to={'/'} className={styles.invisible}></Link>
 
       </div>
     </div>
