@@ -1,6 +1,6 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
-# Individual Project - Rick and Morty App.
+# Individual Project - Front End - Rick and Morty App.
 
 <p align="left">
   <img height="200" src="./landing.jpg" title="Landing page"/>
