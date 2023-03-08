@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Individual Project - Rick and Morty App.
 
-## Available Scripts
+<p align="left">
+  <img height="200" src="./landing.jpg" title="Landing page"/>
+</p>
 
-In the project directory, you can run:
+## Objetivos del Proyecto
 
-### `npm start`
+- Construir una App utlizando React, Redux y CSS puro.
+- Afirmar y conectar los conceptos aprendidos en la carrera.
+- Aprender mejores prácticas.
+- Aprender y practicar el workflow de GIT.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Resultado
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+La idea general fue realizar el desarrollo Front End de una aplicación en la cual se pueda ver información de los distintos personajes de Rick and Morty, utilizando la api externa [restcountries](https://restcountries.com/) y a partir de ella poder, entre otras cosas:
 
-### `npm test`
+- Buscar los personajes
+- Crear actividades turísticas
+- Buscar personajes por ID
+- Poder ingresar y ver el detalle de cada personaje
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Tecnologías utilizadas
 
-### `npm run build`
+- [ ] React
+- [ ] Redux
+- [ ] Express
+- [ ] Sequelize - PostgreSQL
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Aplicación de React/Redux que contiene las siguientes pantallas/rutas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Pagina inicial**: landing page con
 
-### `npm run eject`
+- [ ] Imagen de fondo representativa al proyecto
+- [ ] Botón para ingresar al home (`Ruta principal`)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="left">
+<h3>Landing Page<h3>
+  <img height="200" src="./landing1.jpg" title="Landing page"/>
+</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Ruta principal**: contiene
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ ] Input de búsqueda para encontrar países por nombre o ID
+- [ ] Área donde se ve el listado de países. Al iniciar carga los primeros resultados obtenidos desde la ruta `GET /countries` y muestra su:
+  - Imagen de la bandera
+  - Nombre
+  - Continente
+- [ ] Botones/Opciones para filtrar por continente y por tipo de actividad turística
+- [ ] Botones/Opciones para ordenar tanto ascendentemente como descendentemente los países por orden alfabético y por cantidad de población
+- [ ] Paginado para ir buscando y mostrando los siguientes paises.
+<p align="left">
+<h3>Home page y filtros<h3>
+  <img height="200" src="./home1.jpg" title="Home y filtros" />
+</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="left">
+<h3>Paginado<h3>
+  <img height="200" src="./paginado.jpg" title="Paginado" />
+</p>
 
-## Learn More
+<p align="left">
+<h3>Search Bar<h3>
+  <img height="200" src="./search.jpg" title="Search Bar" />
+</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Ruta de detalle de país**: contiene
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [ ] Los campos mostrados en la ruta principal para cada país (imagen de la bandera, nombre, ID y continente)
+- [ ] Código de país de 3 letras (id)
+- [ ] Capital
+- [ ] Subregión
+- [ ] Población
+- [ ] Actividades turísticas con toda su información asociada
 
-### Code Splitting
+<p align="left">
+<h3>Detail Country con actividades turistica correspondiente<h3>
+  <img height="200" src="./detail.jpg" title="Detail Country" />
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Ruta de creación de actividad turística**: contiene
 
-### Analyzing the Bundle Size
+- [ ] Un formulario **controlado con JavaScript** con los siguientes campos:
+  - Nombre
+  - Dificultad
+  - Duración
+  - Temporada
+- [ ] Posibilidad de seleccionar/agregar varios países en simultáneo
+- [ ] Botón/Opción para crear una nueva actividad turística
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+El formulario de creación está validado con JavaScript.
 
-### Making a Progressive Web App
+<p align="left">
+<h3>Create page<h3>
+  <img height="200" src="./create.jpg" title="Create Page" />
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="left">
+<h3>About me<h3>
+  <img height="200" src="./about.jpg" title="About me" />
+</p>
 
-### Advanced Configuration
+## Base de datos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+El modelo de la base de datos tiene las siguientes entidades:
 
-### Deployment
+- [ ] País con las siguientes propiedades:
+  - ID
+  - Nombre
+  - Imagen de la bandera
+  - Continente
+  - Capital
+  - Subregión
+  - Población
+- [ ] Actividad Turística con las siguientes propiedades:
+  - ID
+  - Nombre
+  - Dificultad (Entre 1 y 5)
+  - Duración
+  - Temporada (Verano, Otoño, Invierno o Primavera)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+La relación entre ambas entidades es de muchos a muchos ya que un país puede contener varias actividades turísticas y, a su vez, una actividad turística puede darse en múltiples países.
 
-### `npm run build` fails to minify
+## Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se desarrolló un servidor en Node/Express con las siguientes rutas:
+
+- [ ] **GET /countries**:
+  - En una primera instancia trae todos los países desde restcountries y los guarda en la base de datos, luego se utilizan desde allí (Retonar sólo los datos necesarios para la ruta principal)
+  - Obtiene un listado de todos los paises.
+- [ ] **GET /countries/{idPais}**:
+  - Obtiene el detalle de un país en particular
+  - Trae solo los datos pedidos en la ruta de detalle de país
+  - Incluye los datos de las actividades turísticas correspondientes
+- [ ] **GET /countries?name="..."**:
+  - Obtiene los países que coincidan con el nombre pasado como query parameter (No necesariamente tiene que ser una matcheo exacto)
+  - Si no existe ningún país mostrar un mensaje adecuado
+- [ ] **POST /activities**:
+  - Recibe los datos recolectados desde el formulario controlado de la ruta de creación de actividad turística por body
+  - Crea una actividad turística en la base de datos, relacionada con los países correspondientes
+
+## Testing
+
+- [ ] Tiene un componente del frontend con sus tests respectivos
+- [ ] Tiene una ruta del backend con sus tests respectivos
+- [ ] Tiene un modelo de la base de datos con sus tests respectivos
